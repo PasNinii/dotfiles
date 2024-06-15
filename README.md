@@ -9,7 +9,6 @@ sudo apt install ripgrep zsh tmux curl xclip jq lsof gawk stow -y
 # setup tmux
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-cp $(pwd)/tmux.conf $HOME/.tmux.conf
 ```
 
 ```bash
