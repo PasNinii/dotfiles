@@ -88,6 +88,7 @@ source "$HOME/.aliases"
 # zoxide setup
 export PATH=$PATH:$HOME/.local/bin
 eval "$(zoxide init zsh)"
+alias cd="z"
 
 # NVM setup
 export NVM_DIR="$HOME/.nvm"
