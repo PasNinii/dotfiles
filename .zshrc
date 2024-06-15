@@ -81,4 +81,8 @@ alias c='clear'
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # Source custom aliases
-source "$HOME/basic-terminal-setup/term_config.sh"
+source "$HOME/.aliases"
+
+# NVM setup
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
