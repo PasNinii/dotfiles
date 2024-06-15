@@ -26,9 +26,7 @@
         {
           "foreground": "p:pink",
           "properties": {
-            "folder_icon": "..\ue5fe..",
-            "home_icon": "~",
-            "style": "agnoster_short"
+            "style": "full"
           },
           "style": "plain",
           "template": "{{ .Path }} ",
@@ -48,7 +46,7 @@
             "revert_icon": "\uf0e2 ",
             "tag_icon": "\uf412 "
           },
-          "template": "{{ .HEAD }} ",
+          "template": " {{ .HEAD }}{{ if and (eq .Ahead 0) (eq .Behind 0) }} \u2261{{end}}{{ if gt .Ahead 0 }} \u2191{{.Ahead}}{{end}}{{ if gt .Behind 0 }} \u2193{{.Behind}}{{end}} {{ if .Working.Changed }}+{{ .Working.Added }} ~{{ .Working.Modified }} -{{ .Working.Deleted }} {{ end }} ",
           "style": "plain",
           "type": "git"
         }
