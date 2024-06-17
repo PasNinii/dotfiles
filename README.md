@@ -1,5 +1,6 @@
 # dotfiles
 
+
 ```bash
 # install apt dep
 sudo apt install ripgrep zsh tmux curl xclip jq lsof gawk stow zoxide -y

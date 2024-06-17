@@ -79,3 +79,4 @@ alias cd="z"
 # NVM setup
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+alias dkb='docker exec -it spinapp env TERM=xterm-256color script -q -c "cd /app/spinapp && /bin/zsh"'
