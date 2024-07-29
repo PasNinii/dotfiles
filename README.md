@@ -3,7 +3,7 @@
 
 ```bash
 # install apt dep
-sudo apt install ripgrep zsh tmux curl xclip jq lsof gawk stow zoxide -y
+sudo apt install ripgrep zsh tmux curl xclip jq lsof gawk stow -y
 ```
 
 ```bash
@@ -18,7 +18,7 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf && ~/.fzf/install
 ```
 
 ```bash
-curl -sSfL https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | sh
+curl -fsSL https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | sh
 ```
 
 ```bash

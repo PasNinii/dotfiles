@@ -80,3 +80,11 @@ alias cd="z"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 alias dkb='docker exec -it spinapp env TERM=xterm-256color script -q -c "cd /app/spinapp && /bin/zsh"'
+export PATH="$HOME/zig-linux-x86_64-0.12.0:$PATH"
+
+# bun completions
+[ -s "/home/nini/.bun/_bun" ] && source "/home/nini/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
