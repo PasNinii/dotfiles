@@ -1,6 +1,7 @@
 # Set the directory we want to store zinit and plugins
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 
+export PATH=$PATH:/home/nini/.local/bin
 # Download Zinit, if it's not there yet
 if [ ! -d "$ZINIT_HOME" ]; then
    mkdir -p "$(dirname $ZINIT_HOME)"
@@ -71,20 +72,6 @@ alias c='clear'
 # Source custom aliases
 source "$HOME/.aliases"
 
-# zoxide setup
-export PATH=$PATH:$HOME/.local/bin
-eval "$(zoxide init zsh)"
-alias cd="z"
-
-# NVM setup
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
-alias dkb='docker exec -it spinapp env TERM=xterm-256color script -q -c "cd /app/spinapp && /bin/zsh"'
-export PATH="$HOME/zig-linux-x86_64-0.12.0:$PATH"
-
-# bun completions
-[ -s "/home/nini/.bun/_bun" ] && source "/home/nini/.bun/_bun"
-
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
