@@ -1,3 +1,5 @@
+# Add deno completions to search path
+if [[ ":$FPATH:" != *":/home/nini/.zsh/completions:"* ]]; then export FPATH="/home/nini/.zsh/completions:$FPATH"; fi
 # Set the directory we want to store zinit and plugins
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 
@@ -75,3 +77,17 @@ source "$HOME/.aliases"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+alias dkb="docker exec -it spinapp zsh" 
+alias dkb='docker exec -it spinapp env TERM=xterm-256color script -q -c "cd /app/spinapp && /bin/zsh"'
+
+# bun completions
+[ -s "/home/nini/.bun/_bun" ] && source "/home/nini/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+. "/home/nini/.deno/env"
+
+# Load Angular CLI autocompletion.
+source <(ng completion script)
