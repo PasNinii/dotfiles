@@ -16,10 +16,7 @@ source "${ZINIT_HOME}/zinit.zsh"
 # Add in snippets
 zinit snippet OMZP::git
 zinit snippet OMZP::sudo
-zinit snippet OMZP::archlinux
 zinit snippet OMZP::aws
-zinit snippet OMZP::kubectl
-zinit snippet OMZP::kubectx
 zinit snippet OMZP::command-not-found
 
 # Add in zsh plugins
@@ -30,7 +27,6 @@ zinit light Aloxaf/fzf-tab
 
 # Load completions
 autoload -Uz compinit && compinit
-
 
 zinit cdreplay -q
 
