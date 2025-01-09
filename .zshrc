@@ -1,9 +1,9 @@
 # Add deno completions to search path
-if [[ ":$FPATH:" != *":/home/nini/.zsh/completions:"* ]]; then export FPATH="/home/nini/.zsh/completions:$FPATH"; fi
+if [[ ":$FPATH:" != *":/home/$USERNAME/.zsh/completions:"* ]]; then export FPATH="/home/$USERNAME/.zsh/completions:$FPATH"; fi
 # Set the directory we want to store zinit and plugins
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 
-export PATH=$PATH:/home/nini/.local/bin
+export PATH=$PATH:/home/$USERNAME/.local/bin
 # Download Zinit, if it's not there yet
 if [ ! -d "$ZINIT_HOME" ]; then
    mkdir -p "$(dirname $ZINIT_HOME)"
