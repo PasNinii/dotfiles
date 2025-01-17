@@ -3,7 +3,7 @@
 
 ```bash
 # install apt dep
-sudo apt install ripgrep zsh tmux curl xclip jq lsof gawk stow -y
+sudo apt install ripgrep tmux curl xclip jq lsof gawk stow -y
 ```
 
 ```bash
@@ -15,12 +15,4 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 ```bash
 # setup fzf
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf && ~/.fzf/install
-```
-
-```bash
-curl -fsSL https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | sh
-```
-
-```bash
-curl -s https://ohmyposh.dev/install.sh | sudo bash -s
 ```
