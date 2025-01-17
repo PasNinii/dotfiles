@@ -15,8 +15,6 @@ function fish_prompt --description 'Write out the prompt'
             for i in (git status --porcelain | string sub -l 2 | sort | uniq)
                  set git_status "$git_status"(set_color -o 89B4FA)"*"
             end
-        else
-            set git_status (set_color -o 89B4FA):
         end
         set git_info "  $git_branch$git_status"
     end
