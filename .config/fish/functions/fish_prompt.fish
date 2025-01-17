@@ -26,3 +26,7 @@ function fish_prompt --description 'Write out the prompt'
     printf '%s%s%s%s%s%s%s%s%s%s%s%s%s' (set_color -o ACB0BE) '  ' (set_color 89B4FA) $USER (set_color ACB0BE) ' ' (set_color F5C2E7) (prompt_pwd) (set_color B4BEFE) $git_info (set_color ACB0BE) " ≡"
     echo \n" "
 end
+
+function fish_right_prompt        
+    # intentionally left blank
+end
