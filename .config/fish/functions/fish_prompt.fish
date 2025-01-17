@@ -13,31 +13,12 @@ function fish_prompt --description 'Write out the prompt'
                 end
             end
             for i in (git status --porcelain | string sub -l 2 | sort | uniq)
-                switch $i
-                    case "."
-                        # new files
-                        set git_status "$git_status"(set_color -o 89B4FA)✚
-                    case "*D*"
-                        # deleted files
-                        set git_status "$git_status"(set_color -o F5C2E7)✖
-                    case "*M*"
-                        # modified files
-                        set git_status "$git_status"(set_color -o 89B4FA)✱
-                    case "*R*"
-                        # renamed files
-                        set git_status "$git_status"(set_color -o F5C2E7)➜
-                    case "*U*"
-                        # unmerged files
-                        set git_status "$git_status"(set_color -o B4BEFE)═
-                    case "??"
-                        # untracked files
-                        set git_status "$git_status"(set_color -o F5C2E7)≠
-                end
+                 set git_status "$git_status"(set_color -o 89B4FA)"*"
             end
         else
             set git_status (set_color -o 89B4FA):
         end
-        set git_info "  $git_branch($git_status)"
+        set git_info "  $git_branch$git_status"
     end
 
     # Disable PWD shortening by default.
