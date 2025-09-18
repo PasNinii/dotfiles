@@ -28,7 +28,8 @@ alias ga="git add"
 alias gaa="git add ."
 alias gap='ga -p'
 alias gc="git commit -m"
-alias gcm="git commit --amend"
+alias gca="git commit --amend"
+alias gcm='git commit -m "merge(master)"'
 
 alias gpl="git pull"
 alias gph="git push"
@@ -55,6 +56,7 @@ alias gla='gl --all'
 
 alias gm='git merge --no-ff'
 alias gmf='git merge --ff-only'
+alias gmm="git merge master"
 
 alias gpthis='gph origin $(git_current_branch)'
 alias gpthis!='gph --set-upstream origin $(git_current_branch)'
