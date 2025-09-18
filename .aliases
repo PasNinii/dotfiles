@@ -114,3 +114,6 @@ alias gpr='gpthis; git pull-request'
 alias k='printf "%s\n" "kill \$(lsof -Fp -i :4200 | grep -o -P -m1 '\''\d+(?![0-9.])'\'')"'
 
 alias gcop='git checkout -'
+
+alias sng="dev && cd angularux && rm -rf .angular && ng serve --port=4200 --host=0.0.0.0 --configuration=development"
+alias sngs="dev && cd angularux && && rm -rf node_modules && yarn && ngs"
