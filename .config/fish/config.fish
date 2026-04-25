@@ -1,5 +1,6 @@
 if status is-interactive
-    # Commands to run in interactive sessions can go here
+    # Strip bold (01;) and trailing ;01 from default LS_COLORS so ls output isn't bold
+    set --export LS_COLORS (dircolors -b | sed -E "s/01;//g; s/;01//g" | string match -rg "'(.*)'")
 end
 
 # bun
