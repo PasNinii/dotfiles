@@ -40,3 +40,4 @@ SETUVAR fish_pager_color_selected_background:\x2d\x2dbackground\x3d44475a
 SETUVAR fish_pager_color_selected_completion:ACB0BE
 SETUVAR fish_pager_color_selected_description:6272a4
 SETUVAR fish_pager_color_selected_prefix:0be9fd
+SETUVAR fish_user_paths:/home/nini/\x2elocal/bin

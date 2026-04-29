@@ -12,7 +12,7 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```
 
 # Install neovim
-```bash
+
 ```bash
 # https://github.com/neovim/neovim/releases
 # Download latest stable app image
@@ -32,5 +32,3 @@ curl -Lo ~/.config/kitty/catppuccin-mocha.conf \
 #
 # Reload with Ctrl+Shift+F5 (or restart Kitty).
 ```
-
-
