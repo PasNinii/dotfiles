@@ -31,4 +31,13 @@ curl -Lo ~/.config/kitty/catppuccin-mocha.conf \
 # include catppuccin-mocha.conf
 #
 # Reload with Ctrl+Shift+F5 (or restart Kitty).
+
+# Useful
+cat /proc/sys/fs/inotify/max_user_watches
+echo "fs.inotify.max_user_watches=524288" | sudo tee -a /etc/sysctl.conf
+
+sudo sysctl -p              # reload /etc/sysctl.conf
+# or
+sudo sysctl --system        # reload all sysctl sources
 ```
+
