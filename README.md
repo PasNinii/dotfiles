@@ -39,5 +39,9 @@ echo "fs.inotify.max_user_watches=524288" | sudo tee -a /etc/sysctl.conf
 sudo sysctl -p              # reload /etc/sysctl.conf
 # or
 sudo sysctl --system        # reload all sysctl sources
+
+# Ubuntu 26 hide desktop icons
+#  gnome-extensions disable ding@rastersoft.com
+
 ```
 
