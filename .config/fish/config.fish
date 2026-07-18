@@ -6,8 +6,9 @@ end
 # bun
 set --export BUN_INSTALL "$HOME/.bun"
 set --export PATH $BUN_INSTALL/bin $PATH
+set --export PATH "$HOME/.local/bin" $PATH
 
-# bun
-set --export BUN_INSTALL "$HOME/.bun"
-set --export PATH $BUN_INSTALL/bin $PATH
-export PATH="$HOME/.local/bin:$PATH"
+# Git/shell aliases. Resolved relative to this file so it works from any HOME
+# (host or the martivent container, which sources this repo's config.fish).
+set -l here (status dirname)
+test -f $here/aliases.fish; and source $here/aliases.fish
