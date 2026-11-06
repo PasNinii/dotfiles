@@ -1,9 +1,8 @@
 # dotfiles
 
-
 ```bash
 # install apt dep
-sudo apt install ripgrep tmux curl xclip jq lsof gawk stow -y
+sudo apt install ripgrep tmux curl xclip jq lsof gawk stow wl-clipboard -y
 ```
 
 ```bash
@@ -44,4 +43,3 @@ sudo sysctl --system        # reload all sysctl sources
 #  gnome-extensions disable ding@rastersoft.com
 
 ```
-
